@@ -6,3 +6,7 @@
 2023-02-15 16:31:29,622 - energyetl.validation - INFO - Data types in previous and new data match
 2023-02-15 16:31:29,623 - energyetl.validation - INFO - Number of rows in previous and new data match
 2023-02-15 16:31:29,623 - energyetl.validation - INFO - Values in previous and new data match
+2023-02-15 23:19:43,291 - energyetl.validation - INFO - Columns in previous and new data match
+2023-02-15 23:19:43,292 - energyetl.validation - INFO - Data types in previous and new data match
+2023-02-15 23:19:43,292 - energyetl.validation - INFO - Number of rows in previous and new data match
+2023-02-15 23:19:43,293 - energyetl.validation - INFO - Values in previous and new data match

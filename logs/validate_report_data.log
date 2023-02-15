@@ -2,3 +2,5 @@
 2023-02-15 16:30:22,942 - energyetl.validation_report - INFO - Data consistency report generated in the file ./report/ET_3.1_DEC_22_data_consistency.csv
 2023-02-15 16:31:52,902 - energyetl.validation_report - INFO - Data profiling report generated in the file ./report/ET_3.1_DEC_22_data_profiling.csv and ./report/ET_3.1_DEC_22_data_profiling.html
 2023-02-15 16:31:52,918 - energyetl.validation_report - INFO - Data consistency report generated in the file ./report/ET_3.1_DEC_22_data_consistency.csv
+2023-02-15 23:20:04,887 - energyetl.validation_report - INFO - Data profiling report generated in the file ./report/ET_3.1_DEC_22_data_profiling.csv and ./report/ET_3.1_DEC_22_data_profiling.html
+2023-02-15 23:20:05,050 - energyetl.validation_report - INFO - Data consistency report generated in the file ./report/ET_3.1_DEC_22_data_consistency.csv

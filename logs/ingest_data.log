@@ -1,2 +1,4 @@
 2023-02-15 16:30:01,580 - energyetl.ingest - INFO - ET_3.1_DEC_22.xlsx downloaded successfully
 2023-02-15 16:31:28,956 - energyetl.ingest - INFO - ET_3.1_DEC_22.xlsx already up-to-date
+2023-02-15 23:16:18,215 - energyetl.ingest - ERROR - HTTPSConnectionPool(host='www.gov.uk', port=443): Max retries exceeded with url: /government/statistics/oil-and-oil-products-section-3-energy-trends (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f8358596980>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2023-02-15 23:19:42,600 - energyetl.ingest - INFO - ET_3.1_DEC_22.xlsx already up-to-date

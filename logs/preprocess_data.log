@@ -14,3 +14,11 @@ Feedstocks                                   0.00               0.00            
 Imports [note 4]                         10086.68           10889.88           11828.64  ...                        12013.00 2023-02-15 16:31:29  ET_3.1_DEC_22.xlsx
 
 [5 rows x 97 columns]
+2023-02-15 23:19:42,883 - energyetl.preprocess - INFO -                                 1999__1st_quarter  1999__2nd_quarter  1999__3rd_quarter  ...  2022_3nd_quarter_[provisional]      processed_date            filename
+Indigenous production [note 2]           34382.56           33060.35           34314.67  ...                         8624.07 2023-02-15 23:19:42  ET_3.1_DEC_22.xlsx
+Crude oil                                32030.90           31037.14           32261.61  ...                         7878.01 2023-02-15 23:19:42  ET_3.1_DEC_22.xlsx
+NGLs [note 3]                             2351.66            2023.21            2053.06  ...                          670.85 2023-02-15 23:19:42  ET_3.1_DEC_22.xlsx
+Feedstocks                                   0.00               0.00               0.00  ...                           75.22 2023-02-15 23:19:42  ET_3.1_DEC_22.xlsx
+Imports [note 4]                         10086.68           10889.88           11828.64  ...                        12013.00 2023-02-15 23:19:42  ET_3.1_DEC_22.xlsx
+
+[5 rows x 97 columns]

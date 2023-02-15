@@ -1,2 +1,3 @@
 2023-02-15 16:30:02,006 - energyetl.save_csv - INFO - Data saved in the file ./data/ET_3.1_DEC_22.csv
 2023-02-15 16:31:29,625 - energyetl.save_csv - INFO - Data saved in the file ./data/ET_3.1_DEC_22.csv
+2023-02-15 23:19:43,448 - energyetl.save_csv - INFO - Data saved in the file ./data/ET_3.1_DEC_22.csv
