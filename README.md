@@ -85,14 +85,9 @@ To install the energyetl package, please follow these steps:
     ```
 
 ### Usage
-To use the energyetl package, please follow these steps:
+To use the energyetl package, please follow this step:
 
-1. Import the energyetl module into your Python script:
-
-    ```
-    $ import energyetl
-    ```
-2. Call `energyetl` from the terminal:
+1. Call `energyetl` from the terminal:
 
     ```
     energyetl
