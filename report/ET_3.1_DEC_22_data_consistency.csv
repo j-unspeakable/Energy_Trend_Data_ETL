@@ -1,5 +1,5 @@
 Check,Result
 processed_date,Column processed_date has correct time format
 missing_value(s),No column has missing value(s)
-new_columns,"New column(s) detected: {'processed_date', 'filename'}"
+new_columns,"New column(s) detected: {'filename', 'processed_date'}"
 missing_columns,No missing column(s) detected
