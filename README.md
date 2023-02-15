@@ -87,9 +87,9 @@ To install the energyetl package, please follow these steps:
 ### Usage
 To use the energyetl package, Call `energyetl` from the terminal:
 
-    ```
-    $ energyetl
-    ```
+```
+$ energyetl
+```
 
 <a name="con"></a>
 ## Conclusion
