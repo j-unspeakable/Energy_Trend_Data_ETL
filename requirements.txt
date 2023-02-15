@@ -20,7 +20,6 @@ et-xmlfile==1.1.0
 fastjsonschema==2.16.2
 fonttools==4.38.0
 fqdn==1.5.1
-great-expectations==0.15.48
 htmlmin==0.1.12
 idna==3.4
 ImageHash==4.3.1
