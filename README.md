@@ -98,8 +98,10 @@ To install the energyetl package, please follow these steps:
     $ prefect deployment build energyetl.main:main -n Energy_Data_ETL --cron '0 8 * * *' -a
     $ prefect agent start -q 'default'
     ```
-    The first command above creates a deployment that runs at 08:00 AM every day and the last initiates a work queue that picks up the flow run created by the deployment when it is time.
+    The first command above creates a deployment that create flow runs every day at 08:00 AM and the last initiates a work queue that picks up the flow run created by the deployment when it is time.
     The cron schedule can be modified for any scheduling use case.
+
+    You can also run `prefect orion start` to view the flow runs and deployments in Prefect Orion web UI.
 
 <a name="con"></a>
 ## Conclusion
