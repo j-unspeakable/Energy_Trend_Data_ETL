@@ -3,6 +3,7 @@ import time
 import logging
 import requests
 from bs4 import BeautifulSoup
+from prefect import task
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
@@ -23,6 +24,7 @@ console_handler.setFormatter(formatter)
 logger.addHandler(file_handler)
 logger.addHandler(console_handler)
 
+@task(log_prints=True, tags=["ingest"])
 def ingest_excel_files(url, html_name):
     try:
         # Get the webpage HTML.

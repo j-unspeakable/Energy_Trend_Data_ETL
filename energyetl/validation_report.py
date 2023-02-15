@@ -2,6 +2,7 @@ import os
 import logging
 import pandas as pd
 import pandas_profiling
+from prefect import task
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
@@ -22,6 +23,7 @@ console_handler.setFormatter(formatter)
 logger.addHandler(file_handler)
 logger.addHandler(console_handler)
 
+@task(log_prints=True)
 def generate_data_profiling_report(df: pd.DataFrame, save_filename):
 
     # Generate standard HTML profiling report with pandas_profiling
@@ -52,6 +54,7 @@ def generate_data_profiling_report(df: pd.DataFrame, save_filename):
     
     return save_path
 
+@task(log_prints=True)
 def generate_data_consistency_report(df: pd.DataFrame, previous_df: pd.DataFrame, save_filename):
     report = {}
 

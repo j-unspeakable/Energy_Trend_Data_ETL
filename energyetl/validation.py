@@ -1,6 +1,7 @@
 import os
 import logging
 import pandas as pd
+from prefect import task
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
@@ -21,6 +22,7 @@ console_handler.setFormatter(formatter)
 logger.addHandler(file_handler)
 logger.addHandler(console_handler)
 
+@task(log_prints=True)
 def validate_data(filename, df, sheet_name, header):
     # read the previous unprocessed dataset
     previous_df = pd.read_excel(f"./data/{filename}", sheet_name=sheet_name, header=header)

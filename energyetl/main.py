@@ -1,9 +1,11 @@
+from prefect import flow
 from energyetl.ingest import ingest_excel_files
 from energyetl.preprocess import process_excel_data
 from energyetl.validation import validate_data
 from energyetl.save_csv import save_data_to_csv
 from energyetl.validation_report import generate_data_profiling_report, generate_data_consistency_report
 
+@flow()
 def main() -> None:
     # Call ingest_excel_files function from ingest.py
     url = 'https://www.gov.uk/government/statistics/oil-and-oil-products-section-3-energy-trends'

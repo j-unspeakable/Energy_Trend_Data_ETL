@@ -1,5 +1,6 @@
 import os
 import logging
+from prefect import task
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
@@ -20,6 +21,7 @@ console_handler.setFormatter(formatter)
 logger.addHandler(file_handler)
 logger.addHandler(console_handler)
 
+@task(log_prints=True)
 def save_data_to_csv(df, filename):
     # Save the cleaned data as a CSV file.
     save_filename = os.path.splitext(filename)[0]

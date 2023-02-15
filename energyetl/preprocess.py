@@ -1,6 +1,7 @@
 import os
 import logging
 import pandas as pd
+from prefect import task
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
@@ -21,6 +22,7 @@ console_handler.setFormatter(formatter)
 logger.addHandler(file_handler)
 logger.addHandler(console_handler)
 
+@task(log_prints=True, tags=["process_data"])
 def process_excel_data(filename, sheet_name, header):
     df = pd.read_excel(f"./data/{filename}", sheet_name=sheet_name, header=header)
     df.rename(columns=lambda x: x.replace(' ', '_'), inplace=True)
