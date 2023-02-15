@@ -78,7 +78,7 @@ To install the energyetl package, please follow these steps:
     $ git clone https://github.com/j-unspeakable/Energy_Trend_Data_ETL.git
     ```
 
-3. Navigate to the `energyetl` directory and install the package.
+3. Navigate to the `Energy_Trend_Data_ETL` directory and install the package.
     ```
     $ cd Energy_Trend_Data_ETL
     $ pip install .
