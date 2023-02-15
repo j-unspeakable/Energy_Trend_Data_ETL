@@ -25,9 +25,13 @@ logger.addHandler(console_handler)
 
 @task(log_prints=True)
 def generate_data_profiling_report(df: pd.DataFrame, save_filename):
-
-    # Generate standard HTML profiling report with pandas_profiling
-    # Generate data profile and save to file
+    '''
+    Function to generate data profiling report.
+    Inputs: Preprocessed dataframe.
+    Returns: Path to the data profiling report.
+    '''
+    # Generate standard HTML profiling report with pandas_profiling.
+    # Generate data profile and save to file.
     if not os.path.exists('./report'):
         os.makedirs('./report')
     profile = pandas_profiling.ProfileReport(df, minimal=True)
@@ -35,14 +39,14 @@ def generate_data_profiling_report(df: pd.DataFrame, save_filename):
     profile.to_file(save_path_html)
 
     # Generate another profiling report in csv. 
-    # Calculate the number of missing values per column
+    # Calculate the number of missing values per column.
     missing_values = df.isna().sum()
     
-    # Calculate the row count and column count
+    # Calculate the row count and column count.
     row_count = len(df)
     column_count = len(df.columns)
     
-    # Combine the results of `df.describe()` with the additional stats
+    # Combine the results of `df.describe()` with the additional stats.
     description = df.describe(include='all', datetime_is_numeric=True)
     description.loc['missing_values', :] = missing_values
     description.loc['row_count', :] = row_count
@@ -56,6 +60,11 @@ def generate_data_profiling_report(df: pd.DataFrame, save_filename):
 
 @task(log_prints=True)
 def generate_data_consistency_report(df: pd.DataFrame, previous_df: pd.DataFrame, save_filename):
+    '''
+    Function to generate data consistency report.
+    Inputs: Preprocessed dataframe, unprocessed dataframe and filename of the saved data.
+    Returns: Path to the data consistency report.
+    '''
     report = {}
 
     if not os.path.exists('./report'):

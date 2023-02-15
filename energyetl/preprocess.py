@@ -24,6 +24,12 @@ logger.addHandler(console_handler)
 
 @task(log_prints=True, tags=["process_data"])
 def process_excel_data(filename, sheet_name, header):
+    '''
+    Function to preprocess excel data.
+    Inputs: filename, sheet_name and header.
+    Returns: Preprocessed dataframe.
+    '''
+    # Read and Preprocess raw data.
     df = pd.read_excel(f"./data/{filename}", sheet_name=sheet_name, header=header)
     df.rename(columns=lambda x: x.replace(' ', '_'), inplace=True)
     df.rename(columns=lambda x: x.replace('\n', '_'), inplace=True)

@@ -23,6 +23,11 @@ logger.addHandler(console_handler)
 
 @task(log_prints=True)
 def save_data_to_csv(df, filename):
+    '''
+    Function to save data.
+    Inputs: Preprocessed dataframe and filename
+    Returns: filename of the saved data.
+    '''
     # Save the cleaned data as a CSV file.
     save_filename = os.path.splitext(filename)[0]
     save_csv = f'./data/{save_filename}.csv'

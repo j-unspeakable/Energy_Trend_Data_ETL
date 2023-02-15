@@ -26,6 +26,11 @@ logger.addHandler(console_handler)
 
 @task(log_prints=True, tags=["ingest"])
 def ingest_excel_files(url, html_name):
+    '''
+    Function to ingest excel data.
+    Inputs: url and html_name
+    Returns: filename of the excel file.
+    '''
     try:
         # Get the webpage HTML.
         response = requests.get(url)
