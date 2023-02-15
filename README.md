@@ -80,7 +80,7 @@ To install the energyetl package, please follow these steps:
 
 3. Navigate to the `energyetl` directory and install the package.
     ```
-    $ cd energyetl
+    $ cd Energy_Trend_Data_ETL
     $ pip install .
     ```
 
