@@ -55,6 +55,7 @@ lake.
 
 <a name="dep"></a>
 ## Deployment Steps
+[Prefect](https://www.prefect.io/) was used to orchestrate the workflow involved in the ETL process. This provides benefits that accompanies workflow orchestration. 
 ### Installation
 To install the energyetl package, please follow these steps:
     
@@ -85,11 +86,20 @@ To install the energyetl package, please follow these steps:
     ```
 
 ### Usage
-To use the energyetl package, Call `energyetl` from the terminal:
+1. To use the energyetl package, run the command below in the terminal:
 
-```
-$ energyetl
-```
+    ```
+    $ python -m energyetl.main
+    ```
+
+2. For scheduling the script to run daily, run the command below in the terminal:
+
+    ```
+    $ prefect deployment build energyetl.main:main -n Energy_Data_ETL --cron '0 8 * * *' -a
+    $ prefect agent start -q 'default'
+    ```
+    The first command above creates a deployment that runs at 08:00 AM every day and the last initiates a work queue that picks up the flow run created by the deployment when it is time.
+    The cron schedule can be modified for any scheduling use case.
 
 <a name="con"></a>
 ## Conclusion
